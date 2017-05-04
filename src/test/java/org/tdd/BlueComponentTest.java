@@ -10,8 +10,10 @@ public class BlueComponentTest {
 	@Test
 	public void should_apply_blue_magic_operation() {
 		BlueComponent blueComponent = new BlueComponent();
-		assertThat(blueComponent.process(19,3)).isEqualTo(16);
-		assertThat(blueComponent.process(3,19)).isEqualTo(16);
+		assertThat(blueComponent.power(1,1)).isEqualTo(1);
+		assertThat(blueComponent.power(1,2)).isEqualTo(3);
+		assertThat(blueComponent.power(2,1)).isEqualTo(0);
+		assertThat(blueComponent.power(2,2)).isEqualTo(2);
 	}
 
 }

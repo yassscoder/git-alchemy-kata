@@ -12,11 +12,11 @@ public class WhiteComponent implements Component {
     }
 
     @Override
-    public int process(int leftOperand, int rightOperand) {
-        int partialResult = leftOperand;
+    public int power(int numberOfDrops, int seconds) {
+        int partialResult = numberOfDrops;
         for (Component component:
              this.components) {
-            partialResult = component.process(partialResult, rightOperand);
+            partialResult = component.power(partialResult, seconds);
         }
         return partialResult;
     }

@@ -5,7 +5,7 @@ package org.tdd;
  */
 public class GreenComponent implements Component{
     @Override
-    public int process(int leftOperand, int rightOperand) {
+    public int power(int numberOfDrops, int seconds) {
         // TODO: implement this
         return 0;
     }

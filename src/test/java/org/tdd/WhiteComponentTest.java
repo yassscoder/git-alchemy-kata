@@ -11,7 +11,7 @@ public class WhiteComponentTest {
 	public void should_apply_all_the_magic_operations() {
 
 		WhiteComponent whiteComponent = new WhiteComponent();
-		assertThat(whiteComponent.process(16,20)).isEqualTo(32);
+		assertThat(whiteComponent.power(16,20)).isEqualTo(32);
 	}
 
 }
