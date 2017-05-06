@@ -10,8 +10,10 @@ public class GreenComponentTest {
 	@Test
 	public void should_apply_green_magic_operation() {
 		GreenComponent greenComponent = new GreenComponent();
-		assertThat(greenComponent.power(19,3)).isEqualTo(16);
-		assertThat(greenComponent.power(3,19)).isEqualTo(16);
+		assertThat(greenComponent.power(1,1)).isEqualTo(0);
+		assertThat(greenComponent.power(1,2)).isEqualTo(1);
+		assertThat(greenComponent.power(2,1)).isEqualTo(3);
+		assertThat(greenComponent.power(2,2)).isEqualTo(2);
 	}
 
 }

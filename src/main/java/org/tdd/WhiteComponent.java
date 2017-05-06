@@ -13,6 +13,7 @@ public class WhiteComponent implements Component {
 
     @Override
     public int power(int numberOfDrops, int seconds) {
+        // DO NOT MODIFY THIS CODE
         int partialResult = numberOfDrops;
         for (Component component:
              this.components) {

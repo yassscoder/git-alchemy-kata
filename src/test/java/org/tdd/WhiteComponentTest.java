@@ -9,9 +9,8 @@ public class WhiteComponentTest {
 
 	@Test
 	public void should_apply_all_the_magic_operations() {
-
 		WhiteComponent whiteComponent = new WhiteComponent();
-		assertThat(whiteComponent.power(16,20)).isEqualTo(32);
+		assertThat(whiteComponent.power(1,1)).isEqualTo(2);
 	}
 
 }
