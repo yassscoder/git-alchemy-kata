@@ -6,6 +6,7 @@ package org.tdd;
 public class BlueComponent implements Component {
     @Override
     public int power(int numberOfDrops, int seconds) {
-        return 0;
+
+        return Math.abs(numberOfDrops-2*seconds);
     }
 }

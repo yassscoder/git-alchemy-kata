@@ -7,8 +7,10 @@ public class WhiteComponent implements Component {
     private Component[] components;
 
     public WhiteComponent() {
-        // TODO: complete this
-
+        components = new Component[3];
+        components[0] = new BlueComponent();
+        components[1] = new GreenComponent();
+        components[2] = new RedComponent();
     }
 
     @Override

@@ -6,7 +6,6 @@ package org.tdd;
 public class GreenComponent implements Component{
     @Override
     public int power(int numberOfDrops, int seconds) {
-        // TODO: implement this
-        return 0;
+        return Math.abs(numberOfDrops*numberOfDrops-seconds);
     }
 }
